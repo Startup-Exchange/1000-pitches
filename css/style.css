@@ -20,8 +20,16 @@ h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
+.top {
+    text-align: left;
+    margin-top:-5%;
+}
 
-
+.sx-header {
+    width:40px;
+    height:40px;
+    text-align:left;
+}
 
 .full-width {
     width: 100vw;
@@ -73,6 +81,12 @@ h6 {
     width:5%;
     height:5%;
 }
+
+button {
+    margin-top: -20%;
+}
+
+
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
@@ -84,7 +98,7 @@ h6 {
 }
 
 .graph > img {
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .info-message {
@@ -92,6 +106,8 @@ h6 {
     text-align: center;
 
 }
+
+
 
 .sponsors {
     background-color: #45CECD;
@@ -109,7 +125,18 @@ h6 {
 .sponsors img {
     top:50%;
     left:50%;
-    max-width: 50%;
+    max-width: 200px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin-right: 5%;
+    margin-left: 5%;
+
+}
+
+.sponsors img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+
 }
 
 
