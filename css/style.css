@@ -1,10 +1,3 @@
-/*
- * Start Bootstrap - Landing Page (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
-body,
 html {
     width: 100%;
     height: 100%;
@@ -17,31 +10,66 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-align:center;
 }
 .top {
     text-align: left;
-    margin-top:-5%;
+    text-decoration: none;
+    padding-left: 2em;
+    padding-top: -1em;
 }
 
+.top a {
+    color: #ffffff;
+}
+
+.top a:hover {
+    text-decoration: none;
+    color: #414141;
+}
+
+.nav {
+    margin-top: 2em;
+}
+
+.nav a, a:hover {
+    text-decoration: none;
+}
+.nav a {
+    color: #38334f;
+    z-index:-1;
+    position:relative
+}
+.nav a:hover {
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+li {
+    display: inline;
+}
 .sx-header {
-    width:40px;
-    height:40px;
+
+    width:60px;
+    height:60px;
     text-align:left;
 }
 
-.full-width {
-    width: 100vw;
-    margin-left: -50vw;
-    left: 50%;
-}
-
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    background: url(../img/atl-bw.jpg) no-repeat center center;
+    background: url(../img/atl-c.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     /*-webkit-filter: blur(10px);*/
     opacity: 0.8;
     background-size: cover;
@@ -49,8 +77,22 @@ h6 {
     max-height: 100%;
 }
 
-.nav-bar p {
-    color: #ffffff;
+.other-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: url(../img/atl-c.jpg) no-repeat right center fixed;
+    max-height:30em;
+    opacity: 0.8;
+}
+
+.other-message {
+    /*position: relative;*/
+    margin-bottom: 15%;
+    padding-top: 1%;
+    max-height: 3em;
+    padding-bottom: 1%;
+    text-align: center;
 }
 
 .intro-message {
@@ -60,7 +102,7 @@ h6 {
     padding-top: 1%;
     padding-bottom: 1%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.85);
+    /*background-color: rgba(0, 0, 0, 0.85);*/
 
 }
 
@@ -94,11 +136,17 @@ button {
 }
 
 .event-info {
-    background-color: #ffffff;
+    background: url(../img/atl-c.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 0.8;
 }
 
 .graph > img {
     max-width: 80%;
+    background-color: #ffffff;
+    opacity:0.95;
 }
 
 .info-message {
@@ -110,14 +158,13 @@ button {
 
 
 .sponsors {
-    background-color: #45CECD;
     overflow:auto;
     padding-bottom: 5%;
 
 }
 
 .sponsors h3{
-    color: rgb(255, 255, 255);
+    color: #4b4b4b;
     text-align: center;
 }
 
@@ -125,11 +172,13 @@ button {
 .sponsors img {
     top:50%;
     left:50%;
+    max-height: 150px;
     max-width: 200px;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     margin-right: 5%;
     margin-left: 5%;
+    padding-top: 2%;
 
 }
 
@@ -221,6 +270,10 @@ button {
     ul.banner-social-buttons {
         float: left;
         margin-top: 15px;
+    }
+
+    .top {
+        max-height: 15%;
     }
 }
 
